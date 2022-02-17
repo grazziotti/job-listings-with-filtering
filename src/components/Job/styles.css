@@ -1,0 +1,126 @@
+.job {
+    padding: 3.2rem 4rem;
+    margin-bottom: 2.4rem;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    box-shadow: 0px 10px 15px rgba(94, 166, 165, .2);
+}
+
+.job--featured {
+    border-left: 4px solid var(--primary-color);
+}
+
+.job--featured .job__content {
+    transform: translateX(-4px); 
+}
+
+.job__content {
+    display: flex;
+    min-height: 9.3rem;
+}
+
+.job__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .4rem 0;
+    margin-left: 2.4rem;
+}
+
+.job__company {
+    display: flex;
+    align-items: center;
+}
+
+.job__company-name {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.job__position {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--primary-very-dark-color);
+}
+
+.job__position:hover {
+    color: var(--primary-color);
+}
+
+.job__info {
+    display: flex;
+}
+
+.job__info p {
+    position: relative;
+    padding: 0 1.6rem;
+    color: var(--primary-dark-color);
+}
+
+.job__info p:first-child {
+    padding-left: 0;
+}
+
+.job__info p:last-child {
+    padding-right: 0;
+}
+
+.job__info p:last-child::after {
+    display: none;
+}
+
+.job__info p::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--primary-dark-color);
+}
+
+.job__company-name {
+    margin-right: 1.6rem;
+}
+
+.job__company span {
+    padding: .8rem 1rem .4rem 1rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.job__new {
+    margin-right: .8rem;
+    background-color: var(--primary-color);
+}
+
+.job__featured {
+    background-color: var(--primary-very-dark-color)
+}
+
+.job__tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    flex-wrap: wrap;
+    column-gap: 1.6rem;
+}
+
+.job__tags__btn {
+    padding: .8rem .8rem .6rem .8rem;
+    font-weight: 700;
+    border-radius: .4rem;
+    background-color: var(--primary-light-color);
+    color: var(--primary-color);
+}
+
+.job__tags__btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
