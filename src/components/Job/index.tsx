@@ -2,45 +2,80 @@ import './styles.css'
 import { JobType } from '../../types/Job'
 
 type Props = {
-    job: JobType
+    data: JobType,
+    onAddFilter: (skill: string) => void;
 }
 
-export const Job = ({ job }: Props) => {
-    const skills: string[] = [job.role, job.level, ...job.languages, ...job.tools]
-
-    const jobClass = job.featured ? 'job job--featured' : 'job' 
+export const Job = ({ data, onAddFilter }: Props) => {
+    /*
+    const skills: [string, string[]] = [
+        ['role', [data.role]], 
+        ['level', [data.level]], 
+        ['languages', [...data.languages]], 
+        ['tools', [...data.tools]]
+    ]
     
+    const skills: { key: string, value: string[]  }[] = [
+        {key: 'role', value: [data.role]}, 
+        {key: 'level', value: [data.level]}, 
+        {key: 'languages', value:[...data.languages]}, 
+        {key: 'tools', value: [...data.tools]}
+    ]
+    */
+
+    const skills: string[] = [data.role, data.level, ...data.languages, ...data.tools]
+    
+    const jobClass = data.featured ? 'job job--featured' : 'job' 
+
     return (
         <div className={jobClass}>
             <div className="job__content">
                 <div className="job__logo">
-                    <img src={job.logo} alt="company logo" />
+                    <img src={data.logo} alt="company logo" />
                 </div>
                 <div className="job__description">
                     <div className="job__company">
-                        <p className="job__company-name">{job.company}</p>
+                        <p className="job__company-name">{data.company}</p>
                         
-                        {job.new && 
+                        {data.new && 
                             <span className="job__new">new!</span>
                         }
                         
-                        {job.featured && 
+                        {data.featured && 
                             <span className="job__featured">featured</span>
                         }
                     </div>
     
-                    <a href="#" className="job__position">{job.position}</a>
+                    <a href="#" className="job__position">{data.position}</a>
 
                     <div className="job__info">
-                        <p>{job.postedAt}</p>
-                        <p>{job.contract}</p>
-                        <p>{job.location}</p>
+                        <p>{data.postedAt}</p>
+                        <p>{data.contract}</p>
+                        <p>{data.location}</p>
                     </div>
                 </div>
                 <div className="job__tags">
                     {skills.map( (skill, index) => (
-                        <button key={index} className="job__tags__btn">{skill}</button>
+                        <button 
+                            className="job__tags__btn" 
+                            key={index}
+                            onClick={() => onAddFilter(skill)}
+                        >{skill}</button>
                     ))}
+                    
+                    {/*
+                    <button className="job__tags__btn">{data.role}</button>
+                    
+                    <button className="job__tags__btn">{data.level}</button>
+                    
+                    {data.languages.map( lang => (
+                        <button className="job__tags__btn">{lang}</button>
+                    ))}
+                    
+                    {data.tools.map( tool => (
+                        <button className="job__tags__btn">{tool}</button>
+                    ))}
+                    */}
                 </div>
             </div>
         </div>

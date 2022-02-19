@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Spartan:wght@500;700&display=swap');
 
 :root {
-  --primary-color: #5ea6a5;
-  --primary-light-color: hsl(180, 52%, 96%);
+  --primary-color: hsl(180, 29%, 50%);
+  --primary-light-color: hsl(180, 31%, 95%);
   --primary-dark-color: hsl(180, 8%, 52%);
   --primary-very-dark-color: hsl(180, 14%, 20%);
   --white-color: hsl(0, 0%, 100%);
@@ -50,6 +50,8 @@ a {
 
 /* ---- */
 .header {
+  display: flex;
+  align-items: flex-end;
   background-image: url('../public/images/bg-header-desktop.svg');
   background-size: cover;
   background-color: var(--primary-color);
@@ -59,7 +61,10 @@ a {
 .container {
   width: 100%;
   max-width: 144rem;
-  height: 4rem;
   margin: 0 auto;
   padding: 0 15rem;
+}
+
+.jobs {
+  padding: 7.2rem 0;
 }

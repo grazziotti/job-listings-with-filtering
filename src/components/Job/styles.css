@@ -114,6 +114,7 @@
 
 .job__tags__btn {
     padding: .8rem .8rem .6rem .8rem;
+    font-size: 1.3rem;
     font-weight: 700;
     border-radius: .4rem;
     background-color: var(--primary-light-color);
