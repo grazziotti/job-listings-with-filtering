@@ -1,9 +1,9 @@
 .job {
-    padding: 3.2rem 4rem;
+    padding: 2.4rem 4rem;
     margin-bottom: 2.4rem;
     border-radius: 5px;
     background-color: var(--white-color);
-    box-shadow: 0px 10px 15px rgba(94, 166, 165, .2);
+    box-shadow: var(--shadow-component);
 }
 
 .job--featured {
@@ -16,14 +16,13 @@
 
 .job__content {
     display: flex;
-    min-height: 9.3rem;
+    min-height: 8.8rem;
 }
 
 .job__description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: .4rem 0;
+    justify-content: center;
     margin-left: 2.4rem;
 }
 
@@ -34,14 +33,15 @@
 
 .job__company-name {
     color: var(--primary-color);
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .job__position {
-    display: block;
-    font-size: 1.9rem;
+    margin: 1.2rem 0;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: var(--primary-very-dark-color);
+    color: var(--neutral-very-dark-color);
 }
 
 .job__position:hover {
@@ -55,7 +55,8 @@
 .job__info p {
     position: relative;
     padding: 0 1.6rem;
-    color: var(--primary-dark-color);
+    font-size: 1.5rem;
+    color: var(--neutral-dark-color);
 }
 
 .job__info p:first-child {
@@ -78,7 +79,7 @@
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    background-color: var(--primary-dark-color);
+    background-color: var(--neutral-dark-color);
 }
 
 .job__company-name {
@@ -100,7 +101,7 @@
 }
 
 .job__featured {
-    background-color: var(--primary-very-dark-color)
+    background-color: var(--neutral-very-dark-color)
 }
 
 .job__tags {
@@ -109,7 +110,7 @@
     justify-content: flex-end;
     flex: 1;
     flex-wrap: wrap;
-    column-gap: 1.6rem;
+    gap: 1.6rem;
 }
 
 .job__tags__btn {
@@ -117,11 +118,51 @@
     font-size: 1.3rem;
     font-weight: 700;
     border-radius: .4rem;
-    background-color: var(--primary-light-color);
+    background-color: var(--neutral-light-color);
     color: var(--primary-color);
 }
 
 .job__tags__btn:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+@media (max-width: 800px) {
+    .job {
+        padding: 0 2.4rem 2.4rem 2.4rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .job__content {
+        flex-direction: column;
+    }
+
+    .job__logo {
+        max-width: 5.5rem;
+        margin-top: -2.75rem;
+    }
+
+    .job__description {
+        margin: 0;
+        border-bottom: 1px solid var(--neutral-dark-color);
+        padding-bottom: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .job__company-name {
+        font-size: 1.3rem;
+    }
+
+    .job__position {
+        font-size: 1.6rem;
+    }
+
+    .job__info p {
+        padding: 0 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .job__tags {
+        justify-content: flex-start;
+    }
 }

@@ -51,14 +51,16 @@ const App = () => {
     <>
     <header className='header'>
       <div className="container">
-        {filters.length > 0 &&
-          <Filter filters={filters} onRemoveFilter={handleRemoveFilter} onClearFilters={handleClearFilters} />
-        }   
       </div>
     </header>
     <main>
       <section className="jobs">
-        <div className="container">    
+        <div className="container"> 
+          <div className="filter-area">   
+            {filters.length > 0 &&
+              <Filter filters={filters} onRemoveFilter={handleRemoveFilter} onClearFilters={handleClearFilters} />
+            }   
+          </div>
           {filteredData.map( (data, index) => (
             <Job key={index} data={data} onAddFilter={handleAddFilter} />
           ))}

@@ -7,22 +7,6 @@ type Props = {
 }
 
 export const Job = ({ data, onAddFilter }: Props) => {
-    /*
-    const skills: [string, string[]] = [
-        ['role', [data.role]], 
-        ['level', [data.level]], 
-        ['languages', [...data.languages]], 
-        ['tools', [...data.tools]]
-    ]
-    
-    const skills: { key: string, value: string[]  }[] = [
-        {key: 'role', value: [data.role]}, 
-        {key: 'level', value: [data.level]}, 
-        {key: 'languages', value:[...data.languages]}, 
-        {key: 'tools', value: [...data.tools]}
-    ]
-    */
-
     const skills: string[] = [data.role, data.level, ...data.languages, ...data.tools]
     
     const jobClass = data.featured ? 'job job--featured' : 'job' 

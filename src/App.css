@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Spartan:wght@500;700&display=swap');
 
 :root {
+  /* colors */
   --primary-color: hsl(180, 29%, 50%);
-  --primary-light-color: hsl(180, 31%, 95%);
-  --primary-dark-color: hsl(180, 8%, 52%);
-  --primary-very-dark-color: hsl(180, 14%, 20%);
+  --neutral-light-color: hsl(180, 31%, 95%);
+  --neutral-dark-color: hsl(180, 8%, 52%);
+  --neutral-very-dark-color: hsl(180, 14%, 20%);
   --white-color: hsl(0, 0%, 100%);
+
+  /* box shadow */
+  --shadow-component: 0px 10px 15px rgba(94, 166, 165, .2);
 }
 
 *,
@@ -24,9 +28,8 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  font-size: 1.5rem;
   font-weight: 500;
-  background-color: var(--primary-light-color);
+  background-color: var(--neutral-light-color);
 }
 
 img {
@@ -60,11 +63,26 @@ a {
 
 .container {
   width: 100%;
-  max-width: 144rem;
+  max-width: 114rem;
   margin: 0 auto;
-  padding: 0 15rem;
 }
 
-.jobs {
-  padding: 7.2rem 0;
+.filter-area {
+  min-height: 7rem;
+}
+
+@media (max-width: 1170px) {
+  .header {
+    background-image: url('../public/images/bg-header-mobile.svg');
+  }
+
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 2.4rem;
+  }
 }
