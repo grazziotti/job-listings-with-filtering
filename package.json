@@ -1,7 +1,7 @@
 {
   "name": "static-job-listings-react",
   "private": true,
-  "homepage": "https://grazziotti.github.io/job-listings-with-filtering",
+  "homepage": "job-listings-with-filtering/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
