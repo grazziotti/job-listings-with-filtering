@@ -11,7 +11,7 @@ const App = () => {
   const [filters, setFilters] = useState<string[]>([])
 
   useEffect(() => {
-    fetch('../public/data/data.json')
+    fetch('../data/data.json')
       .then(res => res.json())
       .then(data => {
         setData(data)

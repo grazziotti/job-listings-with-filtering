@@ -15,7 +15,7 @@ export const Job = ({ data, onAddFilter }: Props) => {
         <div className={jobClass}>
             <div className="job__content">
                 <div className="job__logo">
-                    <img src={data.logo} alt="company logo" />
+                    <img src={data.logo} alt="Company logo" />
                 </div>
                 <div className="job__description">
                     <div className="job__company">

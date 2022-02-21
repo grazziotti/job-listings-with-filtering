@@ -55,7 +55,7 @@ a {
 .header {
   display: flex;
   align-items: flex-end;
-  background-image: url('../public/images/bg-header-desktop.svg');
+  background-image: url('/images/bg-header-desktop.svg');
   background-size: cover;
   background-color: var(--primary-color);
   height: 15rem;
@@ -73,7 +73,7 @@ a {
 
 @media (max-width: 1170px) {
   .header {
-    background-image: url('../public/images/bg-header-mobile.svg');
+    background-image: url('/images/bg-header-mobile.svg');
   }
 
   .container {

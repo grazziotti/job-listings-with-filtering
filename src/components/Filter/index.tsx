@@ -1,5 +1,4 @@
 import './styles.css'
-import {} from '../../../public/images/icon-remove.svg'
 
 type Props = {
     filters: string[];
@@ -15,7 +14,7 @@ export const Filter = ({ filters, onRemoveFilter, onClearFilters }: Props) => {
                     <div key={index} className="filter__tag">
                         <p className="filter__tag__txt">{filter}</p>
                         <button className="filter__tag__btn" onClick={() => onRemoveFilter(index)}>
-                            <img src="../../public/images/icon-remove.svg" alt="Remove icon" />
+                            <img src="/images/icon-remove.svg" alt="Remove icon" />
                         </button>
                     </div>
                 ))}
