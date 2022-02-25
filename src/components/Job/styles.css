@@ -7,11 +7,11 @@
 }
 
 .job--featured {
-    border-left: 4px solid var(--primary-color);
+    border-left: 5px solid var(--primary-color);
 }
 
 .job--featured .job__content {
-    transform: translateX(-4px); 
+    transform: translateX(-5px); 
 }
 
 .job__content {
@@ -144,9 +144,10 @@
 
     .job__description {
         margin: 0;
-        border-bottom: 1px solid var(--neutral-dark-color);
         padding-bottom: 2.4rem;
         margin-bottom: 2.4rem;
+        margin-top: .8rem;
+        border-bottom: 1px solid var(--neutral-dark-color);
     }
 
     .job__company-name {

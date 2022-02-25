@@ -27,6 +27,7 @@ html {
 
 body {
   width: 100%;
+  overflow-x: scroll;
   min-height: 100vh;
   font-weight: 500;
   background-color: var(--neutral-light-color);
@@ -63,12 +64,30 @@ a {
 
 .container {
   width: 100%;
-  max-width: 114rem;
+  max-width: 111rem;
   margin: 0 auto;
 }
 
 .filter-area {
   min-height: 7rem;
+}
+
+.jobs-area {
+  padding-bottom: 2.4rem;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: .5s;
+}
+
+[data-anime="left"] {
+  transform: translateX(-30px);
+}
+
+.animate {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 @media (max-width: 1170px) {

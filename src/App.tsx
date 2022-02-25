@@ -9,14 +9,18 @@ const App = () => {
   const [data, setData] = useState<JobType[]>([])
   const [filteredData, setFilteredData] = useState<JobType[]>([])
   const [filters, setFilters] = useState<string[]>([])
+  const [loading, setLoading] = useState(false)
+  const [animate, setAnimate] = useState('')
 
   useEffect(() => {
+    setLoading(true)
     fetch('../data/data.json')
       .then(res => res.json())
       .then(data => {
         setData(data)
         setFilteredData(data)
       })
+    setLoading(false)
   }, [])
 
   useEffect(() => {
@@ -47,11 +51,17 @@ const App = () => {
     setFilters([])
   }
 
+  useEffect(() => {
+    if (!loading) {
+      setTimeout(() => {
+        setAnimate('animate')
+      }, 301)
+    }
+  }, [loading])
+
   return (
     <>
-    <header className='header'>
-      <div className="container">
-      </div>
+    <header className="header">
     </header>
     <main>
       <section className="jobs">
@@ -61,9 +71,13 @@ const App = () => {
               <Filter filters={filters} onRemoveFilter={handleRemoveFilter} onClearFilters={handleClearFilters} />
             }   
           </div>
-          {filteredData.map( (data, index) => (
-            <Job key={index} data={data} onAddFilter={handleAddFilter} />
-          ))}
+          {!loading &&
+            <div className={`jobs-area ${animate}`} data-anime="left">
+              {filteredData.map( (data, index) => (
+                <Job key={index} data={data} onAddFilter={handleAddFilter} />
+              ))}
+            </div>
+          }
         </div>  
       </section>
     </main>
