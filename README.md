@@ -2,52 +2,52 @@
 
 ![](./public/images/app-screenshot.png)
 
-## 📄 Descrição
+## 📄 Description
 
-Este projeto é a minha solução para o desafio Job listings with filtering do site Frontend Mentor.
+This project is my solution for the Job listings with filtering challenge from the Frontend Mentor website.
 
-Trata-se de um app que apresenta uma listagem de vagas de emprego fictícias com funcionalidade de filtragem
+It is an app that presents a list of fictional job listings with filtering functionality.
 
 ## 🔗 Links
 
-- Solução: [aqui](https://www.frontendmentor.io/solutions/reactjs-flexbox-and-bem-iVOH5XKTO)
-- Link do projeto: [aqui](https://job-listings-with-filtering-khaki.vercel.app/)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/reactjs-flexbox-and-bem-iVOH5XKTO)
+- Live site URL: [here](https://job-listings-with-filtering-khaki.vercel.app/)
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Built With
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 
-## 🎯 O desafio
+## 🎯 The Challenge
 
-- Visualizar o layout ideal do site de acordo com o tamanho da tela do dispositivo
-- Ver estados de hover para todos os elementos interativos na página
-- Filtrar listagens de empregos com base nas categorias selecionadas
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Filter job listings based on the categories selected
 
-## 📋 Pré-requisitos
+## 📋 Prerequisites
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en).
+Before you start, you will need to have the following tools installed on your machine: [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en).
 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
 ```bash
-# Clone este repositório
+# Clone this repository
 $ git clone https://github.com/grazziotti/job-listings-with-filtering
 
-# Acesse a pasta do projeto no terminal/cmd
+# Navigate to the project folder in the terminal/cmd
 $ cd job-listings-with-filtering
 
-# Instale as dependências
+# Install the dependencies
 $ npm install
 
-# Execute o projeto
+# Run the project
 $ npm run dev
 ```
 
-## 👤 Autor
+## 👤 Author
 
 <img style="border-radius: 50px" alt="Daniel Grazziotti" title="Daniel Grazziotti" src="https://avatars.githubusercontent.com/grazziotti" height="100" width="100" />
 
