@@ -4,7 +4,7 @@
 
 ## 📄 Descrição
 
-Este projeto é a minha solução para o desafio [Job listings with filtering](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt/hub) do site [Frontend Mentor](https://www.frontendmentor.io/) :D. Os desafios do Frontend Mentor ajudam a melhorar suas habilidades de codificação ao construir projetos realistas.
+Este projeto é a minha solução para o desafio [Job listings with filtering](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt) do site [Frontend Mentor](https://www.frontendmentor.io/) :D. Os desafios do Frontend Mentor ajudam a melhorar suas habilidades de codificação ao construir projetos realistas.
 
 Trata-se de um app que apresenta uma listagem de vagas de emprego fictícias com funcionalidade de filtragem
 
